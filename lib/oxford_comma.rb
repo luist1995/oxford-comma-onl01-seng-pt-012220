@@ -4,5 +4,7 @@ if array.length < 2
   elsif array.length == 2 
   array.join ("and")
 else 
-  
+  array.last.insert (0,"and")
+  array.join (",")
+end
 end
